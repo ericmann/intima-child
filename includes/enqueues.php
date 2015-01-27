@@ -6,7 +6,7 @@ function setup() {
 		return __NAMESPACE__ . "\\$function";
 	};
 
-	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+	add_action( 'wp_enqueue_scripts', $n( 'theme_enqueue_styles' ) );
 }
 
 function theme_enqueue_styles() {
